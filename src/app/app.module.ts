@@ -9,12 +9,13 @@ import { InvestmentsComponent } from './investments/investments.component';
 import { TickerComponent } from './ticker/ticker.component';
 import { StocksComponent } from './stocks/stocks.component';
 import { AlertComponent } from './alert/alert.component';
+import { AccountService } from './services/account.service';
 
 import { LocalStorageService } from './services/local-storage.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
+		AppComponent,
         InvestmentsComponent,
         TickerComponent,
         StocksComponent,
@@ -27,7 +28,8 @@ import { LocalStorageService } from './services/local-storage.service';
   ],
   providers: [
         LocalStorageService,
-        CurrencyPipe
+        CurrencyPipe,
+		AccountService
        ],
   bootstrap: [AppComponent]
 })
